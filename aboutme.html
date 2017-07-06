@@ -3,29 +3,80 @@
   <!--setting font, color, size-->
   <style>
     h1 {
- color: SteelBlue; 
-  font-size: 50px;    
+ color: Steelblue;
+ background-color: rgb(222, 244, 244);
+
+font-size: 50px;    
  * { 
    font family: Garamond; 
-      }
-  </style>
+   }
+ }
+ h2 {
+ color: Steelblue;
+ }
+
+h3 {
+color: Steelblue;
+ }
+
+</style>
 <head>
-   <title>Caitlin's Portfolio</title> 
+  
+  <title>Caitlin's Portfolio</title> 
+   
 </head>
 
   
-  
-  <body>
+   <body>
+
   <!--My name is centered-->
-  <center> <h1>WELCOME! My name is Caitlin Barnes</h1> </center>
-  <!--Figure out how to resize an image. Make photo smaller-->
-  <img src="Selfie.jpg"/>
-  <!-- About me -->
- 
-    
-  <p>I am 15 years old and live in Novato Cailfornia. I am an uprising junior at San Marin Highschool.</p>
- 
+  <!--Code for changing font color (in HTML)-->
+   <center> <h1 id="NameFont">Caitlin Barnes</h1> </center>
   
+  <script>
+  //javaScript code
+  //lowerCamel case is common in javaScript
+document.getElementById("NameFont").onmouseover = function() {mouseOver("NameFont")};
+document.getElementById("NameFont").onmouseout = function() {mouseOut("NameFont")};
+
+function mouseOver(id) {
+    document.getElementById(id).style.color = "MidnightBlue";
+}
+
+function mouseOut(id) {
+    document.getElementById(id).style.color = "SteelBlue";
+}
+
+</script>
+
+
+
+ <!--Figure out how to resize an image. Make photo smaller-->
+  <img src="Selfie.jpg" width=250/>
+ 
+ <!-- About me -->
+  <h2 id="aboutMe">About Me:</h2>
+
+<script>
+  //javaScript code for changing font of h2
+
+document.getElementById("aboutMe").onmouseover = function() {mouseOver("aboutMe")};
+document.getElementById("aboutMe").onmouseout = function() {mouseOut("aboutMe")};
+
+function mouseOver(id) {
+    document.getElementById(id).style.color = "MidnightBlue";
+}
+
+function mouseOut(id) {
+    document.getElementById(id).style.color = "SteelBlue";
+}
+
+</script>
+
+
+ <p> I am 15 years old and live in Novato Cailfornia. I am an uprising junior at San Marin Highschool. Filler words: Lively began her acting career at age 10, when she appeared in the 1998 film Sandman, which was directed by Lively's father. She describes her role as a "bit part".[19] She appeared in the film adaptation of the novel of the same name, The Sisterhood of the Traveling Pants, in 2005, as Bridget, one of the four female leads. Lively's performance in the film earned her a nomination for a Teen Choice Award for "Choice Movie Breakout – Female. </p>
+ 
+  <div style= "float:left; width:50%; height:180px;"> 
   <p>These are some things I love:</p>
   <ul>
     <li>skiing</li>
@@ -33,25 +84,47 @@
     <li>exploring new places</li>
     <li>animals</li>
   </ul>
+ </div>
  
-    
+ 
+ <div style= "float:right; width:50%; height:180px;">  
   <p>Some things I dislike:</p>
   <ul>
     <li>Traffic</li>
     <li>Burnt toast</li>
     <li>Long plane rides</li>
-    
-  </ul>
+    </ul>
+</div>
 
   <!--Project Section. Use dividers and make columns at some point-->
-  <h2> Take a look at the projects I've made </h2>
+<h3 id="projects">Projects</h3>
+
+<script>
+  //javaScript code for changing font of h3
+
+document.getElementById("projects").onmouseover = function() {mouseOver("projects")};
+document.getElementById("projects").onmouseout = function() {mouseOut("projects")};
+
+function mouseOver(id) {
+    document.getElementById(id).style.color = "MidnightBlue";
+}
+
+function mouseOut(id) {
+    document.getElementById(id).style.color = "Steelblue";
+}
+
+</script>
+
+
+
+
   
-  <img src="The Floor is Lava.jpg"/>
-  <p> This is a side-scroller game that I created with a partner on Scratch </p>
+ <img src="The Floor is Lava.jpg"width=250/>
+<p> This is a side-scroller game that I created with a partner on Scratch </p>
     
     <p> A partner project in Python was to process a picture and then modify the photo to change the colors. We used a photo of the Obama family. Check out the before and after!</p> 
-    <img src="Before.jpg"/> 
-    <img src="After.jpg"/>
+    <img src="Before.jpg"width=250/> 
+    <img src="After.jpg"width=250/>
     
 
 </body> 
