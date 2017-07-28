@@ -18,7 +18,7 @@
  <head>
   <title>Caitlin's Portfolio</title>
  </head>
-   <body background="darkblue.jpg">
+   <!-- <body background=""> -->
   <!--My name is centered-->
   <!--Code for changing font color (in HTML)-->
   <center> <h1 id="NameFont">Caitlin Barnes</h1> </center>
@@ -28,7 +28,7 @@
   document.getElementById("NameFont").onmouseover = function() {mouseOver("NameFont")};
   document.getElementById("NameFont").onmouseout = function() {mouseOut("NameFont")};
   function mouseOver(id) {
-      document.getElementById(id).style.color = "Crimson";
+      document.getElementById(id).style.color = "DimGray";
   }
   function mouseOut(id) {
       document.getElementById(id).style.color = "SteelBlue";
@@ -37,14 +37,13 @@
  <!--Figure out how to resize an image. Make photo smaller-->
  <center> <img src="faceshot.JPG" width=250/> </center>
  <!-- About me -->
- <center> <h2 style= "background-color: lightblue; width: 20%;"id="aboutMe">About Me</h2> </center>
-
+ <center> <h2 id="aboutMe">About Me</h2> </center>
  <script>
   //javaScript code for changing font of h2
   document.getElementById("aboutMe").onmouseover = function() {mouseOver("aboutMe")};
   document.getElementById("aboutMe").onmouseout = function() {mouseOut("aboutMe")};
   function mouseOver(id) {
-      document.getElementById(id).style.color = "Crimson";
+      document.getElementById(id).style.color = "DimGray";
   }
   function mouseOut(id) {
       document.getElementById(id).style.color = "SteelBlue";
@@ -52,22 +51,22 @@
   </script>
 
 
- <center> <p style= "margin: 1% 20% 1% 20%;background-color: lightsteelblue;">  Filler words: Lively began her acting career at age 10, when she appeared in the 1998 film Sandman, which was directed by Lively's father. She describes her role as a "bit part".[19] She appeared in the film adaptation of the novel of the same name, The Sisterhood of the Traveling Pants, in 2005, as Bridget, one of the four female leads. Lively's performance in the film earned her a nomination for a Teen Choice Award for "Choice Movie Breakout – Female. </p> </center>
+ <center> <p style= "margin: 1% 20% 1% 20%;background-color: LightSteelBlue;"> I am 15 years old and live in Novato Cailfornia. I am an uprising junior at San Marin Highschool. Filler words: Lively began her acting career at age 10, when she appeared in the 1998 film Sandman, which was directed by Lively's father. She describes her role as a "bit part".[19] She appeared in the film adaptation of the novel of the same name, The Sisterhood of the Traveling Pants, in 2005, as Bridget, one of the four female leads. Lively's performance in the film earned her a nomination for a Teen Choice Award for "Choice Movie Breakout – Female. </p> </center>
 
 
 
-  <div style= "float:left; width:50%; height:180px; left margin: 5%;background-color: lightsteelblue;">
+  <div style= "float:left; width:50%; height:180px; left margin: 5%;"
   <p>These are some things I love:</p>
   <ul>
     <li>skiing</li>
-    <li>swimming in the ocean</li>
+    <li>swimming in the Ocean</li>
     <li>exploring new places</li>
     <li>animals</li>
   </ul>
  </div>
 
 
- <div style= "float:right; width:50%; height:180px;background-color: lightsteelblue;">
+ <div style= "float:right; width:50%; height:180px;">
   <p>Some things I dislike:</p>
   <ul>
     <li>Traffic</li>
@@ -77,14 +76,14 @@
 </div>
 
   <!--Project Section. Use dividers and make columns at some point-->
-<center> <h3 style= "background-color: lightblue; width: 20%;  id=projects">Projects</h3> </center>
+<center> <h3 id="projects">Projects</h3> </center>
 
 <script>
   //javaScript code for changing font of h3
 document.getElementById("projects").onmouseover = function() {mouseOver("projects")};
 document.getElementById("projects").onmouseout = function() {mouseOut("projects")};
 function mouseOver(id) {
-    document.getElementById(id).style.color = "Crimson";
+    document.getElementById(id).style.color = "DimGray";
 }
 function mouseOut(id) {
     document.getElementById(id).style.color = "Steelblue";
@@ -94,33 +93,28 @@ function mouseOut(id) {
 
 
  <img src="The Floor is Lava.png" width=250>
-<div style= "background-color: lightsteelblue; width: 30%">
+<div>
  <p> This is a side-scroller game that I created with a partner on Scratch </p>
 
 </div>
 
-  <div style= "float:left; width:50%;">
+   <div style= "float:left; width:50%;">
      <img src="Before.png"width=250>
-  </div>
+   </div>
 
-  <div style= "float:right; width:50%;">
+   <div style= "float:right; width:50%;">
      <img src="After.png"width=250>
-  </div>
+   </div>
 
+ <p> A partner project in Python was to process a picture and then modify the photo to change the colors. We used a photo of the Obama family. Check out the before and after!</p>
 
-
-<div style= "background-color: lightsteelblue;">
-
-<p> A partner project in Python was to process a picture and then modify the photo to change the colors. We used a photo of the Obama family. Check out the before and after!</p>
-
-</div>
 
  <img src="Robot.JPG"width=250>
 
 
-<div style= "background-color: lightsteelblue;">
+
    <p> In a group we programmed a robot to escape a maze. We used an Arduino board. When the whiskers bumped into the wall, our robot backed up and turned around. It escaped the maze in 12.28 seconds which was the fastest time. </p>
-</div>
+
 
   </body>
 </html>
